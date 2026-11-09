@@ -1,8 +1,12 @@
 {
   "target": "gemini-chat-exporter",
   "repo": "gustawdaniel/gemini-chat-exporter",
+  "monorepo_sha": "9caf44e79878d89ce7b9b3b1b3c2b94594c58a90",
+  "monorepo_tag": "v2026.11.1",
+  "monorepo_ref": "v2026.11.1",
+  "timestamp": "2026-11-09T17:01:07.000579+00:00",
   "files_count": 28,
-  "total_size_bytes": 378009,
+  "total_size_bytes": 378005,
   "files": [
     {
       "path": ".gitignore",
@@ -46,8 +50,8 @@
     },
     {
       "path": "SECURITY.md",
-      "size": 863,
-      "sha256": "518f69d89ff25f7cdcfbaed937df7ead83ce5970739b443977958d18321e589f"
+      "size": 861,
+      "sha256": "1f5d5b6fc6e469ef70ad958767e44284b8520ac8ad4e34c151b34e1557d756e1"
     },
     {
       "path": "TASKS.md",
@@ -121,8 +125,8 @@
     },
     {
       "path": "manifest.json",
-      "size": 1410,
-      "sha256": "47d9c65b0b1a14bdea0a8eeaf817d8b9b3a09b4080e59aa62568a50851a07e2d"
+      "size": 1408,
+      "sha256": "2540d14fcaa06997d88cf004899f7e70d94a0a91d783458cad2535075b5c06a0"
     },
     {
       "path": "popup.html",
