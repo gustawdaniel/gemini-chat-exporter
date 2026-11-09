@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Gemini Chat Exporter</title>
+  <style>
+    :root {
+      --bg-color: #1e1e2e;
+      --text-color: #e2e8f0;
+      --border-color: #334155;
+      --primary-color: #6366f1;
+      --primary-hover: #4f46e5;
+      --secondary-color: #10b981;
+      --secondary-hover: #059669;
+      --disabled-bg: #334155;
+      --success-bg: #064e3b;
+      --success-text: #6ee7b7;
+      --error-bg: #7f1d1d;
+      --error-text: #fca5a5;
+      --info-bg: #1e293b;
+      --info-text: #93c5fd;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root:not([data-theme="dark"]) {
+        --bg-color: #ffffff;
+        --text-color: #1e293b;
+        --border-color: #e2e8f0;
+        --primary-color: #4f46e5;
+        --primary-hover: #4338ca;
+        --secondary-color: #059669;
+        --secondary-hover: #047857;
+        --disabled-bg: #e2e8f0;
+        --success-bg: #ecfdf5;
+        --success-text: #065f46;
+        --error-bg: #fef2f2;
+        --error-text: #991b1b;
+        --info-bg: #eff6ff;
+        --info-text: #1e40af;
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 270px;
+      padding: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    #popup-header {
+      margin: -10px -10px 10px -10px;
+      padding: 14px 16px;
+      background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+      text-align: center;
+    }
+
+    #header-title {
+      color: white;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    #header-version {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 11px;
+      margin-top: 3px;
+    }
+
+    .options {
+      margin: 6px 0 10px 0;
+    }
+
+    label {
+      display: block;
+      margin: 6px 0;
+      font-size: 12px;
+      color: var(--text-color);
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    select {
+      width: 100%;
+      padding: 5px 8px;
+      margin-top: 3px;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-size: 12px;
+    }
+
+    button {
+      width: 100%;
+      padding: 9px 12px;
+      margin: 4px 0;
+      border: none;
+      border-radius: 6px;
+      background: var(--primary-color);
+      color: white;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    button:hover:not(:disabled) {
+      background: var(--primary-hover);
+    }
+
+    button:disabled {
+      background: var(--disabled-bg);
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+
+    #browsechats {
+      background: var(--secondary-color);
+      margin-top: 6px;
+    }
+
+    #browsechats:hover:not(:disabled) {
+      background: var(--secondary-hover);
+    }
+
+    .status {
+      margin: 8px 0;
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      display: none;
+    }
+
+    .status.show {
+      display: block;
+    }
+
+    .status.success {
+      background: var(--success-bg);
+      color: var(--success-text);
+    }
+
+    .status.error {
+      background: var(--error-bg);
+      color: var(--error-text);
+    }
+
+    .status.info {
+      background: var(--info-bg);
+      color: var(--info-text);
+    }
+  </style>
+</head>
+<body>
+  <div id="popup-header">
+    <div id="header-title">Gemini Chat Exporter</div>
+    <div id="header-version">v1.3.0</div>
+  </div>
+
+  <div style="padding: 0 4px;">
+    <div class="options">
+      <label>
+        Chat format:
+        <select id="format">
+          <option value="json" selected>JSON</option>
+          <option value="markdown">Markdown</option>
+          <option value="text">Plain Text</option>
+        </select>
+      </label>
+
+      <label class="checkbox-label" title="Include the chat messages in the exported file">
+        <input type="checkbox" id="includeChats" checked>
+        Chat messages
+      </label>
+
+      <label class="checkbox-label" title="Add chat metadata (title, date, model) at the top of exported files">
+        <input type="checkbox" id="includeMetadata" checked>
+        Metadata
+      </label>
+
+      <label class="checkbox-label" title="Auto scroll sidebar to discover older conversations">
+        <input type="checkbox" id="autoScrollSidebar" checked>
+        Auto-scroll sidebar
+      </label>
+    </div>
+
+    <button id="exportCurrent">📄 Export Current chat</button>
+    <button id="exportAll">⚡ Export All chats</button>
+    <button id="browsechats">🌐 Browse All chats</button>
+
+    <div id="status" class="status"></div>
+  </div>
+
+  <script src="utils.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

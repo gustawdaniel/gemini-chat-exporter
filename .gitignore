@@ -1,0 +1,37 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+
+# Node.js (if used in future)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Package archives
+*.zip
+*.xpi
+*.crx
+*.pem
+dist/
+
+# Test files
+test-*.html
+test-*.js
+
+# Local environment configuration
+.env
+.env.local

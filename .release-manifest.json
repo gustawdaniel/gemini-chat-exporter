@@ -1,0 +1,148 @@
+{
+  "target": "gemini-chat-exporter",
+  "repo": "gustawdaniel/gemini-chat-exporter",
+  "files_count": 28,
+  "total_size_bytes": 378009,
+  "files": [
+    {
+      "path": ".gitignore",
+      "size": 370,
+      "sha256": "c5eed6a7c937eeb7a6853e90e565d3dc9cca44742b21927313b159b610d2eb2d"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "size": 1794,
+      "sha256": "e5bb671e2c220f3409dd82c30f49255eba3d1596142011e1adc5d23ec083d350"
+    },
+    {
+      "path": "DELIVERY.md",
+      "size": 3060,
+      "sha256": "aa08581e409a332dfec08c001815f01b4f89b222a8eca349b166ae34f2642d94"
+    },
+    {
+      "path": "FINAL-REPORT.md",
+      "size": 9113,
+      "sha256": "e62fbb0b92f0723e67f1c62b133f40a653aba3ae402d167438488ea21abc0cff"
+    },
+    {
+      "path": "GITHUB-PUBLISH.md",
+      "size": 4125,
+      "sha256": "e9396ca30295a164fc0d83dd947aae182b7c49bf8b781144f74578df19d8661c"
+    },
+    {
+      "path": "LICENSE",
+      "size": 1066,
+      "sha256": "a7bb7bac82b24d5ad7c89d01121ff8a144bf147e043624811458266d4ed423bc"
+    },
+    {
+      "path": "PROJECT-SUMMARY.md",
+      "size": 6499,
+      "sha256": "8eb87280d59bb2212e27547dcd80ee8d9041c680511f54383f19df652bb028c4"
+    },
+    {
+      "path": "README.md",
+      "size": 5316,
+      "sha256": "d12cddf85f2c359944dd400d10bc95e12bf89e494233e91bb06c846d6735bf55"
+    },
+    {
+      "path": "SECURITY.md",
+      "size": 863,
+      "sha256": "518f69d89ff25f7cdcfbaed937df7ead83ce5970739b443977958d18321e589f"
+    },
+    {
+      "path": "TASKS.md",
+      "size": 4318,
+      "sha256": "002c6bd8f60135e5a76a78890fef9d03e27783d8dff674b739a1ebf500811e48"
+    },
+    {
+      "path": "TROUBLESHOOTING.md",
+      "size": 7514,
+      "sha256": "9b2666930a8904fba3dee7c58f9555ffc726735584bcbba2aefd92222e6d9cd2"
+    },
+    {
+      "path": "VERSION.md",
+      "size": 5244,
+      "sha256": "5986401702c0f558f1d4bfaffdd45c227de3c1795a73f99bcf77c45dac63a9dd"
+    },
+    {
+      "path": "browse.html",
+      "size": 28923,
+      "sha256": "d4a5333058a771c62884a10ef640f68945ddb89ec1e4e29f3c02c5beae65458f"
+    },
+    {
+      "path": "browse.js",
+      "size": 73481,
+      "sha256": "e74716c4df1762b5fcff8f3e8522042642d4d428a2fb910a5321adf576f9e325"
+    },
+    {
+      "path": "build.py",
+      "size": 3723,
+      "sha256": "0401eb65a92b56d03309d93f8877f10ec3ff8afd6653be7e64e3af41a8dc667a"
+    },
+    {
+      "path": "content.js",
+      "size": 63004,
+      "sha256": "dd5c36a50230ac5f5e5ba375df48595d734dfe1c36a2203fe1727a9ccf669b9a"
+    },
+    {
+      "path": "db.js",
+      "size": 6138,
+      "sha256": "cdb3db9b1a82a8dd71993ecd0c094e51ca1a83ed7e3c5426f37d6c9bbe8d59e5"
+    },
+    {
+      "path": "gemini_rpc_fetcher.js",
+      "size": 10327,
+      "sha256": "5377b4f429d34db1f955e6aab5245d2bcc792a940953b143a64c6cc98d05cfdb"
+    },
+    {
+      "path": "icon128.png",
+      "size": 16350,
+      "sha256": "84a7f4f39f41de441618e777b708f711871f961432907549bc8d40172a9d6c17"
+    },
+    {
+      "path": "icon16.png",
+      "size": 757,
+      "sha256": "9482e69da12f64c9a35c8955b101d19d6530cabf068025b7a3e18aa16d73489c"
+    },
+    {
+      "path": "icon48.png",
+      "size": 2694,
+      "sha256": "059eeec4e89623c8a6156b16905f74e7a4587fdc7a573c0ea4d17eca9a8ecf96"
+    },
+    {
+      "path": "jszip.min.js",
+      "size": 97630,
+      "sha256": "acc7e41455a80765b5fd9c7ee1b8078a6d160bbbca455aeae854de65c947d59e"
+    },
+    {
+      "path": "logger-server.js",
+      "size": 2569,
+      "sha256": "2f7f9d71af0696911d7130948860b2efd577e2ebd0d48eeec68194b87585121f"
+    },
+    {
+      "path": "manifest.json",
+      "size": 1410,
+      "sha256": "47d9c65b0b1a14bdea0a8eeaf817d8b9b3a09b4080e59aa62568a50851a07e2d"
+    },
+    {
+      "path": "popup.html",
+      "size": 4932,
+      "sha256": "8da4dfa8df2e202f02fe372835fc76a0fa96b20edef03a2f22d798552e7b9fa1"
+    },
+    {
+      "path": "popup.js",
+      "size": 7036,
+      "sha256": "0d5738d02826e51c669fd8a862cf88f5a74c1052dd6f70191c037cb68f5e4d11"
+    },
+    {
+      "path": "styles.css",
+      "size": 4485,
+      "sha256": "c55f7f50a5077df6262d48c2b5390244b91110982f00e36d9e0c89d0891c426f"
+    },
+    {
+      "path": "utils.js",
+      "size": 5268,
+      "sha256": "c1e8f291fd4f08c0c5c51579720ada9b79b54c39ddc789cc7a19b1e9a527d31d"
+    }
+  ]
+}
